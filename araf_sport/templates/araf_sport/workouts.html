@@ -1,0 +1,23 @@
+{% extends "araf_sport/base.html" %}
+
+{%block content %}
+
+<body>
+
+<h1>I will put a form to upload pics</h1>
+
+
+
+
+{% if messages  %}
+{% for message in  messages  %}
+<div class = 'alert alert-{{ message.tags }}'>
+{{message}}
+    </div>
+{% endfor %}
+{% endif %}
+
+
+{%endblock%}
+</body>
+</html>
